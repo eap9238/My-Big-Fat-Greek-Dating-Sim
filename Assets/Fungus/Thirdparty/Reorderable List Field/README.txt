@@ -1,4 +1,4 @@
-﻿README
+README
 ======
 
 List control for Unity allowing editor developers to add reorderable list controls to
