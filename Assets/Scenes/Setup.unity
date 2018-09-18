@@ -453,6 +453,9 @@ GameObject:
   - component: {fileID: 479762932}
   - component: {fileID: 479762931}
   - component: {fileID: 479762930}
+  - component: {fileID: 479762934}
+  - component: {fileID: 479762933}
+  - component: {fileID: 479762935}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -476,7 +479,7 @@ MonoBehaviour:
   targetTextObject: {fileID: 135681366}
   text:
     stringRef: {fileID: 0}
-    stringVal: 'Player Name: {$PlayerName}'
+    stringVal: 'Player Name: {$playerName}'
   description: 
   _textObjectObsolete: {fileID: 0}
 --- !u!114 &479762900
@@ -566,7 +569,7 @@ MonoBehaviour:
   - {fileID: 479762920}
 --- !u!114 &479762904
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -605,7 +608,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &479762906
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -652,6 +655,9 @@ MonoBehaviour:
   - {fileID: 479762931}
   - {fileID: 479762932}
   - {fileID: 479762930}
+  - {fileID: 479762934}
+  - {fileID: 479762933}
+  - {fileID: 479762935}
 --- !u!114 &479762908
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -793,8 +799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
-  key: PlayerName
+  scope: 2
+  key: playerName
   value: N/A
 --- !u!114 &479762916
 MonoBehaviour:
@@ -959,7 +965,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &479762923
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1022,7 +1028,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &479762924
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1134,12 +1140,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
-  key: Gender
+  scope: 2
+  key: gender
   value: 0
 --- !u!114 &479762928
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1202,7 +1208,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &479762929
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1213,7 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 1
-  storyText: Hi ${PlayerName} the girl, your character and account have been loaded.
+  storyText: Hi {$playerName} the girl, your character and account have been loaded.
     Please enjoy the game!
   description: 
   character: {fileID: 0}
@@ -1229,7 +1235,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &479762930
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1242,7 +1248,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &479762931
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1305,7 +1311,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &479762932
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479762898}
@@ -1316,7 +1322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 1
-  storyText: Hi ${PlayerName} the guy, your character and account have been loaded.
+  storyText: Hi {$playerName} the guy, your character and account have been loaded.
     Please enjoy the game!
   description: 
   character: {fileID: 0}
@@ -1330,6 +1336,68 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &479762933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479762898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Introduction
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &479762934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479762898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: Let's Go!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &479762935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479762898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Eleanor_Test_Scene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &492949703
 GameObject:
   m_ObjectHideFlags: 0

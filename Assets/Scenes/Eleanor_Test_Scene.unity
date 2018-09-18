@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: '{$PlayerName}'
+  nameText: '{$playerName}'
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -3953,7 +3953,6 @@ GameObject:
   - component: {fileID: 2064486202}
   - component: {fileID: 2064486201}
   - component: {fileID: 2064486199}
-  - component: {fileID: 2064486205}
   - component: {fileID: 2064486204}
   - component: {fileID: 2064486206}
   - component: {fileID: 2064486209}
@@ -3988,6 +3987,7 @@ GameObject:
   - component: {fileID: 2064486237}
   - component: {fileID: 2064486236}
   - component: {fileID: 2064486235}
+  - component: {fileID: 2064486205}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4008,7 +4008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: You ({$PlayerName}) are studying for your doctoral program in greece
+  storyText: You ({$playerName}) are studying for your doctoral program in greece
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4100,7 +4100,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 2064486184}
   commandList:
-  - {fileID: 2064486205}
   - {fileID: 2064486182}
   - {fileID: 2064486192}
   - {fileID: 2064486181}
@@ -4140,6 +4139,7 @@ MonoBehaviour:
   selectedCommands: []
   variables:
   - {fileID: 2064486204}
+  - {fileID: 2064486205}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -4602,8 +4602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
-  key: PlayerName
+  scope: 2
+  key: playerName
   value: N/A
 --- !u!114 &2064486205
 MonoBehaviour:
@@ -4613,13 +4613,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2064486180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23c657364a3b24e16bdf5946729a8b7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 22
-  indentLevel: 0
-  key: PlayerName
-  variable: {fileID: 2064486204}
+  scope: 2
+  key: gender
+  value: 0
 --- !u!114 &2064486206
 MonoBehaviour:
   m_ObjectHideFlags: 2
