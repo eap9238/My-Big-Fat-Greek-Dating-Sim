@@ -2183,7 +2183,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 636191013}
+  - {fileID: 636191006}
   selectedCommands: []
   variables: []
   description: 
@@ -3162,8 +3162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 243.42249
-    y: 193.89699
+    x: 244.91502
+    y: 195.38953
     width: 145.52232
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3437,7 +3437,7 @@ MonoBehaviour:
   targetButton: {fileID: 1567630734}
 --- !u!114 &636191030
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
@@ -3457,7 +3457,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &636191031
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
