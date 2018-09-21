@@ -19,7 +19,7 @@ public class ClockTime : MonoBehaviour {
     {
         myText = gameObject.GetComponent<Text>();
 
-        myFlowchart.SetIntegerVariable("minute", myFlowchart.GetIntegerVariable("minute") + 5);
+        //myFlowchart.SetIntegerVariable("minute", myFlowchart.GetIntegerVariable("minute") + 5);
 
         minute = myFlowchart.GetIntegerVariable("minute");
         hour = myFlowchart.GetIntegerVariable("hour");
@@ -34,12 +34,23 @@ public class ClockTime : MonoBehaviour {
 
     }
 
-    void AddMinute (int min)
+    public void AddMinute (int min)
     {
         minute += min;
 
+		Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
+
         FixTime();
     }
+
+	void ShiftRooms()
+	{
+		minute += 5;
+
+		Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
+
+		FixTime();
+	}
 
     void FixTime()
     {
