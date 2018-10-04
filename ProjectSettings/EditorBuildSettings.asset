@@ -6,27 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Setup.unity
-    guid: b439e2aa6105f104fa4715a3b72b38e6
+    path: Assets/Scenes/Places/Town.unity
+    guid: eadc2423022fcf84ea7c07a716d2a5ec
   - enabled: 1
-    path: Assets/Scenes/Eleanor_Test_Scene.unity
-    guid: d6f920c516b58264c9edaac12c6ca70d
+    path: Assets/Scenes/Places/Caves.unity
+    guid: 4bdfae6b7e49c004d8fcc57bb4154729
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: e5eb2e05a4a80f14bb7849c072cbc4b5
+    path: Assets/Scenes/Places/Field.unity
+    guid: 9058999aa1d41f345b6b36b45b01e60d
   - enabled: 1
-    path: Assets/Scenes/Introduction.unity
-    guid: bae3a09695cbb5c44bd941a32b505086
+    path: Assets/Scenes/Places/Beach.unity
+    guid: b14d31265e59fa84396807b47a4fef45
   - enabled: 1
-    path: Assets/Scenes/Beach.unity
-    guid: 1a200d287340f724abc905d8cd95c27a
+    path: Assets/Scenes/Menus/Introduction.unity
+    guid: 67ff5333e3490e24a85ff1777daf3374
   - enabled: 1
-    path: Assets/Scenes/Caves.unity
-    guid: 63aa75a85fb007445bdf8fd1fcbc6141
+    path: Assets/Scenes/Menus/Menu.unity
+    guid: 9c6160a65769cf24b8a0e78b89192c0c
   - enabled: 1
-    path: Assets/Scenes/Field.unity
-    guid: fdba9e3d4fe0bac49b488c88eec6fa4b
+    path: Assets/Scenes/Menus/Setup.unity
+    guid: 49bc6f341fa40854a8a8e192dc288fd2
   - enabled: 1
-    path: Assets/Scenes/Town.unity
-    guid: 24b117c5db59f3d45a2dbbe8475c4eda
+    path: Assets/Scenes/Debug/Eleanor_Test_Scene.unity
+    guid: dbdd85079e996e344801909e77d8281d
   m_configObjects: {}
