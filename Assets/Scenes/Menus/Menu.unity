@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 469738529}
   - component: {fileID: 469738528}
   m_Layer: 5
-  m_Name: Text
+  m_Name: NG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2153,6 +2153,7 @@ GameObject:
   - component: {fileID: 636191030}
   - component: {fileID: 636191032}
   - component: {fileID: 636191033}
+  - component: {fileID: 636191034}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2173,7 +2174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 93.95705, y: 72.692726}
+  scrollPos: {x: 147.68837, y: 4.036068}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 367
@@ -2184,8 +2185,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 636190969}
+  selectedCommands:
+  - {fileID: 636190991}
   variables: []
   description: 
   stepPause: 0
@@ -2230,7 +2233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 85.87806
+    x: 87.3706
     y: 92.58532
     width: 120
     height: 40
@@ -2247,6 +2250,7 @@ MonoBehaviour:
   - {fileID: 636190989}
   - {fileID: 636190990}
   - {fileID: 636190991}
+  - {fileID: 636191034}
 --- !u!114 &636190970
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3518,6 +3522,25 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &636191034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c0367bf08d147bd80b5454de50e9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 0
+  targetTextObject: {fileID: 1092041905}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: 
+  description: 
+  _textObjectObsolete: {fileID: 0}
 --- !u!1 &726865210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,7 +4047,7 @@ GameObject:
   - component: {fileID: 869816450}
   - component: {fileID: 869816449}
   m_Layer: 5
-  m_Name: Text
+  m_Name: NG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4297,7 +4320,7 @@ GameObject:
   - component: {fileID: 955095751}
   - component: {fileID: 955095750}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4922,7 +4945,7 @@ GameObject:
   - component: {fileID: 1092041908}
   - component: {fileID: 1092041907}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6815,7 +6838,7 @@ RectTransform:
   m_Father: {fileID: 990990034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.35326397}
+  m_AnchorMin: {x: 0, y: 0.31549507}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -7128,7 +7151,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030518, y: 0.000061035156}
-  m_SizeDelta: {x: -14.299988, y: 168.23752}
+  m_SizeDelta: {x: -14.299988, y: 141.96033}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1638194705
 MonoBehaviour:
@@ -7633,7 +7656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 890.46075, y: 0}
+  m_AnchoredPosition: {x: 848.7487, y: 0}
   m_SizeDelta: {x: 302, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1772690576
@@ -8180,8 +8203,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1612867044}
   m_HandleRect: {fileID: 1612867043}
   m_Direction: 2
-  m_Value: 0.99999964
-  m_Size: 0.646736
+  m_Value: 0.9999996
+  m_Size: 0.6845048
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
