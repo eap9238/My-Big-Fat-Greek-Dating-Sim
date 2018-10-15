@@ -58,12 +58,12 @@ public class Seagull : MonoBehaviour {
         if (LR)
         {
             GameObject gull = GameObject.Instantiate(gameObject);
-            gull.transform.position.Set(-10f, 5f, 0f);
+			gull.transform.position = new Vector3(-10f, 5f, 0f);
         }
         else
         {
             GameObject gull = GameObject.Instantiate(gameObject);
-            gull.transform.position.Set(10f, 5f, 0f);
+			gull.transform.position = new Vector3(10f, 5f, 0f);
         }
     }
 }
