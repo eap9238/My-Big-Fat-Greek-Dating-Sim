@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Seagull : MonoBehaviour {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigidBody;
     private bool LR = false;
+    public Fungus.Flowchart myFlowchart;
 
-	// Use this for initialization
-	void Start () {
-        rigidbody = GetComponent<Rigidbody2D>();
+    // Use this for initialization
+    void Start () {
+        rigidBody = GetComponent<Rigidbody2D>();
+        //myFlowchart = GameObject.Find("GullSpawn").Flowchart;
+
         if (gameObject.transform.position.x < 0)
         {
             LR = true;
@@ -21,18 +24,21 @@ public class Seagull : MonoBehaviour {
         {
             if (LR)
             {
-                rigidbody.AddForce(new Vector2(0, 40f));
-                rigidbody.velocity = new Vector2(1f, 4f);
+                rigidBody.AddForce(new Vector2(0, 40f));
+                rigidBody.velocity = new Vector2(1f, 4f);
             }
             else
             {
-                rigidbody.AddForce(new Vector2(0, 40f));
-                rigidbody.velocity = new Vector2(-1f, 4f);
+                rigidBody.AddForce(new Vector2(0, 40f));
+                rigidBody.velocity = new Vector2(-1f, 4f);
             }
         }
 
         if (gameObject.transform.position.x <= .8 && gameObject.transform.position.x >= -.8)
         {
+            //health loss
+            myFlowchart.SetIntegerVariable("Health", (myFlowchart.GetIntegerVariable("Health") - 1));
+
             Launch();
         }
     }
@@ -41,13 +47,13 @@ public class Seagull : MonoBehaviour {
     { 
         if (LR)
         {
-            rigidbody.AddForce(new Vector2(0, 50f));
-            rigidbody.velocity = new Vector2(-5f, 10f);
+            rigidBody.AddForce(new Vector2(0, 50f));
+            rigidBody.velocity = new Vector2(-5f, 10f);
         }
         else
         {
-            rigidbody.AddForce(new Vector2(0, 50f));
-            rigidbody.velocity = new Vector2(5f, 10f);
+            rigidBody.AddForce(new Vector2(0, 50f));
+            rigidBody.velocity = new Vector2(5f, 10f);
         }
     }
 
