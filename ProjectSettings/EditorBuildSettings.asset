@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutScenes/gameIntro.unity
     guid: 7f497ef3a02296f409f6a21e244af0ab
+  - enabled: 1
+    path: Assets/Scenes/Date Resolution/BeachResolution.unity
+    guid: 8697217601527b24aa15ec65dd0743d0
+  - enabled: 1
+    path: Assets/Scenes/Dates/Date2.unity
+    guid: bca27d31f00999847a2c95ce6b3cbcb5
+  - enabled: 1
+    path: Assets/Scenes/Dates/gullStrike.unity
+    guid: 98d21b0192db8784c8138c0824e2e01f
   m_configObjects: {}
