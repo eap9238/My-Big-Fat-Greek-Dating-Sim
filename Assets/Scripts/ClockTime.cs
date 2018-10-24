@@ -80,4 +80,15 @@ public class ClockTime : MonoBehaviour {
         myFlowchart.SetIntegerVariable("week", week);
     }
 
+	public void NextMorning()
+	{
+		hour = 8;
+
+		minute = 0;
+
+		day++;
+
+		FixTime ();
+	}
+
 }
