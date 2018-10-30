@@ -1330,7 +1330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1080854732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1988,13 +1988,22 @@ GameObject:
   - component: {fileID: 1796158665}
   - component: {fileID: 1796158669}
   - component: {fileID: 1796158661}
-  - component: {fileID: 1796158664}
   - component: {fileID: 1796158672}
-  - component: {fileID: 1796158682}
   - component: {fileID: 1796158681}
+  - component: {fileID: 1796158686}
+  - component: {fileID: 1796158692}
+  - component: {fileID: 1796158691}
+  - component: {fileID: 1796158690}
+  - component: {fileID: 1796158689}
+  - component: {fileID: 1796158688}
+  - component: {fileID: 1796158687}
+  - component: {fileID: 1796158685}
+  - component: {fileID: 1796158664}
   - component: {fileID: 1796158684}
   - component: {fileID: 1796158683}
-  - component: {fileID: 1796158685}
+  - component: {fileID: 1796158682}
+  - component: {fileID: 1796158694}
+  - component: {fileID: 1796158693}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2029,7 +2038,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1796158662}
   selectedCommands:
-  - {fileID: 1796158685}
+  - {fileID: 1796158693}
   variables:
   - {fileID: 1796158660}
   - {fileID: 1796158659}
@@ -2269,12 +2278,13 @@ MonoBehaviour:
   - {fileID: 1796158666}
   - {fileID: 1796158665}
   - {fileID: 1796158661}
-  - {fileID: 1796158664}
-  - {fileID: 1796158683}
-  - {fileID: 1796158681}
-  - {fileID: 1796158684}
-  - {fileID: 1796158682}
-  - {fileID: 1796158685}
+  - {fileID: 1796158693}
+  - {fileID: 1796158692}
+  - {fileID: 1796158691}
+  - {fileID: 1796158690}
+  - {fileID: 1796158689}
+  - {fileID: 1796158688}
+  - {fileID: 1796158687}
   - {fileID: 1796158663}
 --- !u!114 &1796158663
 MonoBehaviour:
@@ -2297,13 +2307,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1796158647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 75
-  indentLevel: 1
-  commenterName: Eleanor
-  commentText: Jump to night Cutscene
+  itemId: 93
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Player Smile left >>>: II''m a bit tired -- time to go to sleep!
+
+
+      Player hide:'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
 --- !u!114 &1796158665
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2821,7 +2847,181 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796158681
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 360.42114
+    y: 212.4212
+    width: 146.05261
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 97
+  blockName: TownDoor (Copy)
+  description: 
+  eventHandler: {fileID: 1796158686}
+  commandList:
+  - {fileID: 1796158694}
+  - {fileID: 1796158685}
+  - {fileID: 1796158664}
+  - {fileID: 1796158684}
+  - {fileID: 1796158683}
+  - {fileID: 1796158682}
+--- !u!114 &1796158682
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c784b19efbe8424fa879e0d6d883281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 96
+  indentLevel: 0
+  loadingImage: {fileID: 0}
+--- !u!114 &1796158683
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  description: NextDay()
+  targetObject: {fileID: 1297336205}
+  targetComponentAssemblyName: ClockTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ClockTime
+  targetMethod: NextMorning
+  targetMethodText: 'NextMorning (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1796158684
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 94
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
+--- !u!114 &1796158685
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 91
+  indentLevel: 0
+  commenterName: Eleanor
+  commentText: Voluntary Sleep
+--- !u!114 &1796158686
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1796158681}
+  targetButton: {fileID: 1080854733}
+--- !u!114 &1796158687
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c784b19efbe8424fa879e0d6d883281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 1
+  loadingImage: {fileID: 0}
+--- !u!114 &1796158688
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 89
+  indentLevel: 1
+  description: NextDay()
+  targetObject: {fileID: 1297336205}
+  targetComponentAssemblyName: ClockTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ClockTime
+  targetMethod: NextMorning
+  targetMethodText: 'NextMorning (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1796158689
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 1
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
+--- !u!114 &1796158690
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796158647}
@@ -2830,7 +3030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 78
+  itemId: 87
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
@@ -2850,36 +3050,9 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &1796158682
+--- !u!114 &1796158691
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796158647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 77
-  indentLevel: 1
-  description: NextDay()
-  targetObject: {fileID: 1297336205}
-  targetComponentAssemblyName: ClockTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: ClockTime
-  targetMethod: NextMorning
-  targetMethodText: 'NextMorning (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &1796158683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796158647}
@@ -2888,7 +3061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 80
+  itemId: 86
   indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
@@ -2897,7 +3070,22 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &1796158684
+--- !u!114 &1796158692
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796158647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 1
+  commenterName: Eleanor
+  commentText: Jump to night Cutscene
+--- !u!114 &1796158693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2905,16 +3093,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1796158647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Script: {fileID: 11500000, guid: ab0d0ed4a2ca94c81a230a0ecce6e6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 79
+  itemId: 100
   indentLevel: 1
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  durationOLD: 0
---- !u!114 &1796158685
+  targetObjects:
+  - {fileID: 287898572}
+  - {fileID: 1080854731}
+  interactableState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1796158694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2922,12 +3112,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1796158647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c784b19efbe8424fa879e0d6d883281, type: 3}
+  m_Script: {fileID: 11500000, guid: ab0d0ed4a2ca94c81a230a0ecce6e6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 81
-  indentLevel: 1
-  loadingImage: {fileID: 0}
+  itemId: 99
+  indentLevel: 0
+  targetObjects:
+  - {fileID: 287898572}
+  - {fileID: 1080854731}
+  interactableState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &1868027076
 GameObject:
   m_ObjectHideFlags: 0
