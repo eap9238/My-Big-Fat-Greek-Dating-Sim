@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TextReport : MonoBehaviour {
 
+    public GameObject target;
+    public int value;
+
 	// Use this for initialization
 	void Start () {
 		
