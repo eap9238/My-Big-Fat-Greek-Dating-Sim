@@ -2159,6 +2159,10 @@ GameObject:
   - component: {fileID: 636191035}
   - component: {fileID: 636191037}
   - component: {fileID: 636191036}
+  - component: {fileID: 636191040}
+  - component: {fileID: 636191043}
+  - component: {fileID: 636191042}
+  - component: {fileID: 636191041}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2191,7 +2195,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 636191013}
+  - {fileID: 636191006}
   selectedCommands: []
   variables: []
   description: 
@@ -3012,6 +3016,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 636191008}
+  - {fileID: 636191042}
   - {fileID: 636191038}
   - {fileID: 636191023}
   - {fileID: 636191032}
@@ -3040,7 +3045,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -3111,7 +3116,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -3133,7 +3138,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 420.58005
-    y: 91.01029
+    y: 92.50283
     width: 161.94022
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3144,6 +3149,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 636191012}
+  - {fileID: 636191041}
   - {fileID: 636191035}
   - {fileID: 636191024}
   - {fileID: 636191033}
@@ -3188,6 +3194,7 @@ MonoBehaviour:
   eventHandler: {fileID: 636191017}
   commandList:
   - {fileID: 636191016}
+  - {fileID: 636191040}
   - {fileID: 636191037}
   - {fileID: 636191031}
   - {fileID: 636191025}
@@ -3197,7 +3204,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -3386,7 +3393,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -3419,6 +3426,7 @@ MonoBehaviour:
   eventHandler: {fileID: 636191029}
   commandList:
   - {fileID: 636191026}
+  - {fileID: 636191043}
   - {fileID: 636191036}
   - {fileID: 636191030}
   - {fileID: 636191028}
@@ -3650,6 +3658,182 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &636191040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 0
+  description: Set Save to 1
+  targetObject: {fileID: 1332967889}
+  targetComponentAssemblyName: CorrectSave, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CorrectSave
+  targetMethod: SetSaveFile
+  targetMethodText: 'SetSaveFile (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Fungus/SaveProfile1
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &636191041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  description: Set Save to 2
+  targetObject: {fileID: 1332967889}
+  targetComponentAssemblyName: CorrectSave, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CorrectSave
+  targetMethod: SetSaveFile
+  targetMethodText: 'SetSaveFile (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Fungus/SaveProfile2
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &636191042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 87
+  indentLevel: 0
+  description: Set Save to 1
+  targetObject: {fileID: 1332967889}
+  targetComponentAssemblyName: CorrectSave, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CorrectSave
+  targetMethod: SetSaveFile
+  targetMethodText: 'SetSaveFile (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Fungus/SaveProfile1
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &636191043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  description: Set Save to 2
+  targetObject: {fileID: 1332967889}
+  targetComponentAssemblyName: CorrectSave, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CorrectSave
+  targetMethod: SetSaveFile
+  targetMethodText: 'SetSaveFile (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: Fungus/SaveProfile2
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &726865210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,6 +6158,7 @@ GameObject:
   - component: {fileID: 1332967892}
   - component: {fileID: 1332967891}
   - component: {fileID: 1332967890}
+  - component: {fileID: 1332967898}
   m_Layer: 5
   m_Name: SaveMenu
   m_TagString: Untagged
@@ -6188,7 +6373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe25ebf9ddc8416ead6f30d4671fdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveDataKey: save_data
+  saveDataKey: Fungus/SaveProfile
   loadOnStart: 0
   autoSave: 0
   restartDeletesSave: 1
@@ -6222,6 +6407,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1332967898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332967889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a5e27d1f351a24eb90d22b07f3f140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362778075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6947,7 +7143,7 @@ RectTransform:
   m_Father: {fileID: 990990034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3283063}
+  m_AnchorMin: {x: 0, y: 0.33379224}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -7260,7 +7456,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030518, y: 0.000061035156}
-  m_SizeDelta: {x: -14.299988, y: 150.54239}
+  m_SizeDelta: {x: -14.299988, y: 154.31845}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1638194705
 MonoBehaviour:
@@ -7765,7 +7961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 848.753, y: 0}
+  m_AnchoredPosition: {x: 866.6205, y: 0}
   m_SizeDelta: {x: 302, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1772690576
@@ -8312,8 +8508,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1612867044}
   m_HandleRect: {fileID: 1612867043}
   m_Direction: 2
-  m_Value: 0.999999
-  m_Size: 0.67169356
+  m_Value: 0.9999996
+  m_Size: 0.66620743
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
