@@ -317,6 +317,28 @@ namespace Fungus
             SceneManager.LoadScene(saveManager.StartScene);
         }
 
+        /// <summary>
+        /// Handler function called when the Restart button is pressed.
+        /// </summary>
+        public virtual void Delete()
+        {
+            var saveManager = FungusManager.Instance.SaveManager;
+            if (string.IsNullOrEmpty(saveManager.StartScene))
+            {
+                Debug.LogError("No start scene specified");
+                return;
+            }
+
+            PlayClickSound();
+
+            // Reset the Save History for a new game
+            saveManager.ClearHistory();
+            saveManager.Delete(saveDataKey);
+
+            SaveManagerSignals.DoSaveReset();
+            SceneManager.LoadScene(saveManager.StartScene);
+        }
+
         #endregion
     }
 }
