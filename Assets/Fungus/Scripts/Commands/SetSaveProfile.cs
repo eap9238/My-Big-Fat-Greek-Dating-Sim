@@ -29,8 +29,14 @@ namespace Fungus
 		public static String SaveProfile { get { return saveProfile; } }
 
         public override void OnEnter()
-        {
-            saveProfile = saveProfileName;
+		{
+			Debug.Log ("Prof_name: " + saveProfileName);
+			Debug.Log ("Prof: " + saveProfile);
+
+			saveProfile = saveProfileName;
+
+			Debug.Log ("Prof_name: " + saveProfileName);
+			Debug.Log ("Prof: " + saveProfile);
 
             Continue();
         }

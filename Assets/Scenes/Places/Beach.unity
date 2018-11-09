@@ -686,7 +686,7 @@ Transform:
   - {fileID: 278028255}
   - {fileID: 1587753669}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &456913846
 GameObject:
@@ -1159,9 +1159,25 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 666228845}
+  - {fileID: 666228818}
   selectedCommands:
-  - {fileID: 666228838}
+  - {fileID: 666228828}
+  - {fileID: 666228829}
+  - {fileID: 666228886}
+  - {fileID: 666228891}
+  - {fileID: 666228827}
+  - {fileID: 666228874}
+  - {fileID: 666228873}
+  - {fileID: 666228894}
+  - {fileID: 666228872}
+  - {fileID: 666228871}
+  - {fileID: 666228893}
+  - {fileID: 666228870}
+  - {fileID: 666228869}
+  - {fileID: 666228892}
+  - {fileID: 666228868}
+  - {fileID: 666228851}
+  - {fileID: 666228887}
   variables:
   - {fileID: 666228814}
   - {fileID: 666228813}
@@ -3468,7 +3484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &893082456
 GameObject:

@@ -38,7 +38,7 @@ public class ClockTime : MonoBehaviour {
     {
         minute += min;
 
-		Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
+		//Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
 
         FixTime();
     }
@@ -47,7 +47,7 @@ public class ClockTime : MonoBehaviour {
 	{
 		minute += 5;
 
-		Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
+		//Debug.Log ("Time updated from " + (minute - 5) + " to " + minute);
 
 		FixTime();
 	}
