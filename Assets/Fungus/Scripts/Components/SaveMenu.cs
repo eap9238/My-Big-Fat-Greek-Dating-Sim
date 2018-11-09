@@ -15,7 +15,7 @@ namespace Fungus
     public class SaveMenu : MonoBehaviour 
     {
         [Tooltip("The string key used to store save game data in Player Prefs. If you have multiple games defined in the same Unity project, use a unique key for each one.")]
-        [SerializeField] protected string saveDataKey = FungusConstants.DefaultSaveDataKey;
+        [SerializeField] public string saveDataKey = FungusConstants.DefaultSaveDataKey;
 
         [Tooltip("Automatically load the most recently saved game on startup")]
         [SerializeField] protected bool loadOnStart = true;
@@ -313,6 +313,28 @@ namespace Fungus
             {
                 saveManager.Delete(saveDataKey);
             }
+            SaveManagerSignals.DoSaveReset();
+            SceneManager.LoadScene(saveManager.StartScene);
+        }
+
+        /// <summary>
+        /// Handler function called when the Restart button is pressed.
+        /// </summary>
+        public virtual void Delete()
+        {
+            var saveManager = FungusManager.Instance.SaveManager;
+            if (string.IsNullOrEmpty(saveManager.StartScene))
+            {
+                Debug.LogError("No start scene specified");
+                return;
+            }
+
+            PlayClickSound();
+
+            // Reset the Save History for a new game
+            saveManager.ClearHistory();
+            saveManager.Delete(saveDataKey);
+
             SaveManagerSignals.DoSaveReset();
             SceneManager.LoadScene(saveManager.StartScene);
         }
