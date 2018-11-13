@@ -318,7 +318,7 @@ namespace Fungus
         }
 
         /// <summary>
-        /// Handler function called when the Restart button is pressed.
+        /// Handler function called when the Delete button is pressed.
         /// </summary>
         public virtual void Delete()
         {
@@ -332,11 +332,11 @@ namespace Fungus
             PlayClickSound();
 
             // Reset the Save History for a new game
-            saveManager.ClearHistory();
+            //saveManager.ClearHistory();
             saveManager.Delete(saveDataKey);
 
-            SaveManagerSignals.DoSaveReset();
-            SceneManager.LoadScene(saveManager.StartScene);
+            //SaveManagerSignals.DoSaveReset();
+            //SceneManager.LoadScene(saveManager.StartScene);
         }
 
         #endregion
