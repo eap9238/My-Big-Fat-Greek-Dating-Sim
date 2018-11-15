@@ -59,11 +59,11 @@ namespace Fungus
         /// <value>The save data items.</value>
         public List<SaveDataItem> SaveDataItems { get { return saveDataItems; } }
 
-        /// <summary>
+		/// <summary>
         /// Encodes a new Save Point to data and converts it to JSON text format.
         /// </summary>
         public static string Encode(string _savePointKey, string _savePointDescription, string _sceneName)
-        {
+		{
             var savePointData = Create(_savePointKey, _savePointDescription, _sceneName);
 
             // Look for a SaveData component in the scene to populate the save data items.
@@ -82,6 +82,8 @@ namespace Fungus
         public static void Decode(string saveDataJSON)
         {
             var savePointData = JsonUtility.FromJson<SavePointData>(saveDataJSON);
+
+			JSONDescription(saveDataJSON);
 
             UnityAction<Scene, LoadSceneMode> onSceneLoadedAction = null;
 
@@ -108,7 +110,95 @@ namespace Fungus
                 
             SceneManager.sceneLoaded += onSceneLoadedAction;
             SceneManager.LoadScene(savePointData.SceneName);
-        }     
+        }
+
+		public struct StringVar
+		{
+			public string key { get; set; }
+			public string value { get; set; }
+		}
+
+		public struct IntVar
+		{
+			public string key { get; set; }
+			public int value { get; set; }
+		}
+
+		public struct BoolVar
+		{
+			public string key { get; set; }
+			public bool value { get; set; }
+		}
+
+		public struct RootObject
+		{
+			public string flowchartName { get; set; }
+			public List<StringVar> stringVars { get; set; }
+			public List<IntVar> intVars { get; set; }
+			public List<object> floatVars { get; set; }
+			public List<BoolVar> boolVars { get; set; }
+			
+			public static RootObject CreateFromJSON(string jsonString)
+			{
+				return JsonUtility.FromJson<RootObject>(jsonString);
+			}
+		}
+
+		public static string JSONDescription (string saveDataJSON) 
+		{
+			var savePointData = JsonUtility.FromJson<SavePointData>(saveDataJSON);
+
+			Debug.Log(savePointData);
+
+			string data = savePointData.SaveDataItems[0].Data;
+
+			Debug.Log(data);
+
+			RootObject playerData = RootObject.CreateFromJSON(data);
+
+Debug.Log("SavePointData: " + playerData);
+			Debug.Log(playerData.flowchartName);
+			Debug.Log(playerData.stringVars);
+			Debug.Log(playerData.intVars);
+			Debug.Log(playerData.boolVars);
+			return data;
+		}
+
+		/*
+		/// <summary>
+		/// Decodes a Save Point from JSON text format and loads it.
+		/// </summary>
+		public static string StringDecode(string saveDataJSON)
+		{
+			var savePointData = JsonUtility.FromJson<SavePointData>(saveDataJSON);
+
+			UnityAction<Scene, LoadSceneMode> onSceneLoadedAction = null;
+
+			onSceneLoadedAction = (scene, mode) =>  {
+				// Additive scene loads and non-matching scene loads could happen if the client is using the
+				// SceneManager directly. We just ignore these events and hope they know what they're doing!
+				if (mode == LoadSceneMode.Additive ||
+				scene.name != savePointData.SceneName)
+				{
+					return;
+				}
+
+				SceneManager.sceneLoaded -= onSceneLoadedAction;
+
+				// Look for a SaveData component in the scene to process the save data items.
+				var saveData = GameObject.FindObjectOfType<SaveData>();
+				if (saveData != null)
+				{
+					saveData.Decode(savePointData.SaveDataItems);
+				}
+
+				SaveManagerSignals.DoSavePointLoaded(savePointData.savePointKey);
+			};
+
+			SceneManager.sceneLoaded += onSceneLoadedAction;
+			SceneManager.LoadScene(savePointData.SceneName);
+		}   
+		*/
 
         #endregion
     }

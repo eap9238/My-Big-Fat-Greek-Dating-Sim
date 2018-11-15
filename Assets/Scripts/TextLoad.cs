@@ -14,7 +14,8 @@ public class TextLoad : MonoBehaviour
     {
         dataPath = Path.Combine(Application.persistentDataPath, fileName);
 
-        printData = LoadCharacter(dataPath);
+		//printData = LoadSaveData(dataPath);
+		//printData = LoadJson(dataPath);
     }
 
     void Update()
@@ -40,13 +41,39 @@ public class TextLoad : MonoBehaviour
         {
             string jsonString = streamReader.ReadToEnd();
 
-            var formattedString = JsonUtility.FromJson<string>(jsonString);
+			var formattedString = JsonUtility.FromJson<string>(jsonString);
+			foreach (var item in formattedString)
+			{
+				Debug.Log (item);
+			}
 
             Debug.Log(jsonString);
-            Debug.Log(formattedString);
-            Debug.Log(formattedString.Length);
+            //Debug.Log(formattedString);
+            //Debug.Log(formattedString.Length);
 
             return formattedString;
         }
     }
+
+	/*
+	static string LoadSaveData(string path) {
+		if (true) //save point exists
+		{ 
+			var savePointData = savePoints [savePoints.Count - 1];
+			SavePointData.Decode (savePointData);
+
+			return "Save File Found";
+		} 
+		else 
+		{
+			return "Empty Save";
+		}
+	}
+
+	public class SaveData
+	{
+		public string version { get; set; }
+		public string savePoints { get; set; }
+	}
+	*/
 }
