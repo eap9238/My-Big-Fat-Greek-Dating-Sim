@@ -2184,6 +2184,16 @@ GameObject:
   - component: {fileID: 636191061}
   - component: {fileID: 636191064}
   - component: {fileID: 636191063}
+  - component: {fileID: 636191065}
+  - component: {fileID: 636191068}
+  - component: {fileID: 636191067}
+  - component: {fileID: 636191066}
+  - component: {fileID: 636191069}
+  - component: {fileID: 636191074}
+  - component: {fileID: 636191073}
+  - component: {fileID: 636191072}
+  - component: {fileID: 636191071}
+  - component: {fileID: 636191070}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2216,9 +2226,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 636191060}
-  selectedCommands:
-  - {fileID: 636191063}
+  - {fileID: 636191065}
+  selectedCommands: []
   variables:
   - {fileID: 636191045}
   - {fileID: 636191044}
@@ -3211,8 +3220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 247.26796
-    y: 193.03659
+    x: 248.69647
+    y: 311.60785
     width: 161.4285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3443,8 +3452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 236.20259
-    y: 255.00427
+    x: 421.9165
+    y: 310.71857
     width: 161.4285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4045,8 +4054,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 408.89142
-    y: 248.86983
+    x: 416.03418
+    y: 244.5841
     width: 171.4285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4145,8 +4154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 421.3853
-    y: 188.33072
+    x: 414.24243
+    y: 184.045
     width: 171.4285
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4277,6 +4286,234 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &636191065
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 250.24643
+    y: 186.87125
+    width: 157.14279
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 38
+  blockName: NewSave1 (Copy)
+  description: 
+  eventHandler: {fileID: 636191069}
+  commandList:
+  - {fileID: 636191068}
+  - {fileID: 636191067}
+  - {fileID: 636191066}
+--- !u!114 &636191066
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  text: No
+  description: 
+  targetBlock: {fileID: 636190988}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1144288206}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &636191067
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 116
+  indentLevel: 0
+  text: Yes
+  description: 
+  targetBlock: {fileID: 636191060}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1144288206}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &636191068
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 0
+  storyText: This will delete save profile 1, are you sure you want to do this?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &636191069
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 636191065}
+  targetButton: {fileID: 1575242409}
+--- !u!114 &636191070
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 636191074}
+  targetButton: {fileID: 1575242409}
+--- !u!114 &636191071
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 121
+  indentLevel: 0
+  text: No
+  description: 
+  targetBlock: {fileID: 636190988}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1144288206}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &636191072
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  text: Yes
+  description: 
+  targetBlock: {fileID: 636191055}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 1144288206}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &636191073
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  storyText: This will delete save profile 2, are you sure you want to do this?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &636191074
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 250.02542
+    y: 243.80817
+    width: 157.14279
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 66
+  blockName: NewSave2 (Copy)
+  description: 
+  eventHandler: {fileID: 636191070}
+  commandList:
+  - {fileID: 636191073}
+  - {fileID: 636191072}
+  - {fileID: 636191071}
 --- !u!1 &666489626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4525,7 @@ GameObject:
   - component: {fileID: 666489629}
   - component: {fileID: 666489628}
   m_Layer: 5
-  m_Name: LG1
+  m_Name: DG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4344,7 +4581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: Delete File
 --- !u!222 &666489629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5130,6 +5367,7 @@ GameObject:
   - component: {fileID: 955095749}
   - component: {fileID: 955095751}
   - component: {fileID: 955095750}
+  - component: {fileID: 955095752}
   m_Layer: 5
   m_Name: LG2
   m_TagString: Untagged
@@ -5195,6 +5433,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955095748}
   m_CullTransparentMesh: 0
+--- !u!114 &955095752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955095748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 955095750}
+  fileName: FungusSaves/SaveProfile2.json
 --- !u!1 &970789004
 GameObject:
   m_ObjectHideFlags: 1
@@ -5832,7 +6083,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: 
+  text: {fileID: 1092041907}
+  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &1094784787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6906,7 +7158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveDataKey: Fungus/SaveProfile
   loadOnStart: 0
-  autoSave: 1
+  autoSave: 0
   restartDeletesSave: 1
   saveMenuGroup: {fileID: 1772690579}
   saveMenuButton: {fileID: 742938414}
@@ -7331,7 +7583,6 @@ GameObject:
   - component: {fileID: 1567630736}
   - component: {fileID: 1567630735}
   - component: {fileID: 1567630734}
-  - component: {fileID: 1567630737}
   m_Layer: 5
   m_Name: Save2LoadGame
   m_TagString: Untagged
@@ -7433,18 +7684,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567630732}
   m_CullTransparentMesh: 0
---- !u!114 &1567630737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1567630732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fileName: FungusSaves/SaveProfile2.json
 --- !u!1 &1575242407
 GameObject:
   m_ObjectHideFlags: 0
@@ -7801,7 +8040,7 @@ RectTransform:
   m_Father: {fileID: 990990034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.26644316}
+  m_AnchorMin: {x: 0, y: 0.31992394}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -8114,7 +8353,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030518, y: 0.000091552734}
-  m_SizeDelta: {x: -14.299988, y: 111.8721}
+  m_SizeDelta: {x: -14.299988, y: 144.89066}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1638194705
 MonoBehaviour:
@@ -8619,7 +8858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 848.52814, y: 0}
+  m_AnchoredPosition: {x: 902.00726, y: 0}
   m_SizeDelta: {x: 302, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1772690576
@@ -8899,7 +9138,6 @@ GameObject:
   - component: {fileID: 1796893795}
   - component: {fileID: 1796893794}
   - component: {fileID: 1796893793}
-  - component: {fileID: 1796893796}
   m_Layer: 5
   m_Name: Save1LoadGame
   m_TagString: Untagged
@@ -9001,18 +9239,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796893791}
   m_CullTransparentMesh: 0
---- !u!114 &1796893796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796893791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &1822770809
 GameObject:
   m_ObjectHideFlags: 0
@@ -9179,8 +9405,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1612867044}
   m_HandleRect: {fileID: 1612867043}
   m_Direction: 2
-  m_Value: 0.99999946
-  m_Size: 0.7335567
+  m_Value: 0.99999934
+  m_Size: 0.6800759
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9234,7 +9460,7 @@ GameObject:
   - component: {fileID: 1912933786}
   - component: {fileID: 1912933785}
   m_Layer: 5
-  m_Name: LG2
+  m_Name: DG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9290,7 +9516,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: Delete File
 --- !u!222 &1912933786
 CanvasRenderer:
   m_ObjectHideFlags: 0
