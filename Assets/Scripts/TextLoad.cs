@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TextLoad : MonoBehaviour
 {
+    //nic was here
     public Text text;
 
     public string fileName;
