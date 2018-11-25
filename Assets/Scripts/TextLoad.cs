@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class TextLoad : MonoBehaviour
 {
     //nic was here
-    public Text text;
+	private static Text text;
+	private static Button button;
 
     public string fileName;
     private string dataPath;
@@ -15,33 +16,44 @@ public class TextLoad : MonoBehaviour
 
     void Start()
     {
+		text = GetComponentInChildren<Text> ();
+		button = GetComponent<Button> ();
+
         dataPath = Path.Combine(Application.persistentDataPath, fileName);
-
-		//printData = LoadSaveData(dataPath);
-		printData = LoadJson(dataPath);
-
-        text.text = printData;
     }
 
     void Update()
-    {
-        //printData = LoadCharacter(dataPath);
+	{
+		
     }
+
+	public void LoadText() {
+		printData = LoadJson(dataPath);
+
+		text.text = printData;
+	}
 
     static string LoadJson(string path)
     {
-        using (StreamReader streamReader = new StreamReader(path))
-        {
-            string jsonString = streamReader.ReadToEnd();
+		try {
+			using (StreamReader streamReader = new StreamReader(path))
+			{
+				string jsonString = streamReader.ReadToEnd();
 
-			JsonObject formattedString = JsonUtility.FromJson<JsonObject>(jsonString);
+				JsonObject formattedString = JsonUtility.FromJson<JsonObject>(jsonString);
 
-            //Debug.Log(jsonString);
-            //Debug.Log(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
-            //Debug.Log(formattedString.Length);
+				//Debug.Log(jsonString);
+				//Debug.Log(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
+				//Debug.Log(formattedString.Length);
 
-            return JSONDescription(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
-        }
+				return JSONDescription(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
+			}
+		}
+		catch {
+			button.interactable = false;
+
+			return ("No Save File");
+		}
     }
 
     public static string JSONDescription(string saveDataJSON)

@@ -1977,6 +1977,7 @@ GameObject:
   - component: {fileID: 591350702}
   - component: {fileID: 591350701}
   - component: {fileID: 591350700}
+  - component: {fileID: 591350703}
   m_Layer: 5
   m_Name: Save2NewGame
   m_TagString: Untagged
@@ -2078,6 +2079,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 591350698}
   m_CullTransparentMesh: 0
+--- !u!114 &591350703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591350698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &636190966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,11 +2183,9 @@ GameObject:
   - component: {fileID: 636191059}
   - component: {fileID: 636191058}
   - component: {fileID: 636191057}
-  - component: {fileID: 636191056}
   - component: {fileID: 636191055}
   - component: {fileID: 636191054}
   - component: {fileID: 636191053}
-  - component: {fileID: 636191052}
   - component: {fileID: 636191039}
   - component: {fileID: 636191038}
   - component: {fileID: 636191037}
@@ -2194,6 +2205,10 @@ GameObject:
   - component: {fileID: 636191072}
   - component: {fileID: 636191071}
   - component: {fileID: 636191070}
+  - component: {fileID: 636191076}
+  - component: {fileID: 636191075}
+  - component: {fileID: 636191056}
+  - component: {fileID: 636191052}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2214,11 +2229,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 32.610756, y: -23.911331}
+  scrollPos: {x: 53.19449, y: 24.616907}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 367
-  zoom: 0.7000004
+  zoom: 0.7300003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2226,8 +2241,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 636191065}
-  selectedCommands: []
+  - {fileID: 636190969}
+  selectedCommands:
+  - {fileID: 636191052}
   variables:
   - {fileID: 636191045}
   - {fileID: 636191044}
@@ -2278,8 +2294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 87.3706
-    y: 92.58532
+    x: 86.00073
+    y: 91.215454
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2296,6 +2312,8 @@ MonoBehaviour:
   - {fileID: 636190990}
   - {fileID: 636190991}
   - {fileID: 636191034}
+  - {fileID: 636191056}
+  - {fileID: 636191052}
 --- !u!114 &636190970
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2378,7 +2396,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 82.43909
     y: 195.09764
-    width: 138.57138
+    width: 134.93147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2673,6 +2691,8 @@ MonoBehaviour:
   - {fileID: 636190984}
   - {fileID: 636190983}
   - {fileID: 636190982}
+  - {fileID: 636191076}
+  - {fileID: 636191075}
 --- !u!114 &636190989
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2881,7 +2901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.658615
     y: 143.46342
-    width: 137.1428
+    width: 133.56161
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2971,7 +2991,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 238.6702
     y: 32.48452
-    width: 145.71423
+    width: 141.78079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3046,7 +3066,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 421.45642
     y: 30.67799
-    width: 179.99992
+    width: 174.65747
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3176,9 +3196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 420.58005
-    y: 91.01029
-    width: 179.99992
+    x: 422.0086
+    y: 89.58172
+    width: 174.65747
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3222,7 +3242,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.69647
     y: 311.60785
-    width: 161.4285
+    width: 156.84927
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3365,7 +3385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 237.02068
     y: 92.27841
-    width: 145.71423
+    width: 141.78079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3454,7 +3474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 421.9165
     y: 310.71857
-    width: 161.4285
+    width: 156.84927
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3989,17 +4009,31 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &636191052
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 636191055}
-  targetButton: {fileID: 1575242409}
+  itemId: 127
+  indentLevel: 0
+  description: Reset Button Text
+  targetObject: {fileID: 591350698}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &636191053
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4033,7 +4067,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -4054,16 +4088,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 416.03418
-    y: 244.5841
-    width: 171.4285
+    x: 417.40405
+    y: 245.95396
+    width: 166.43831
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 109
   blockName: Delete Save Profile 2
   description: 
-  eventHandler: {fileID: 636191052}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 636191054}
   - {fileID: 636191064}
@@ -4072,17 +4106,31 @@ MonoBehaviour:
   - {fileID: 636191062}
 --- !u!114 &636191056
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 636191060}
-  targetButton: {fileID: 2079893821}
+  itemId: 126
+  indentLevel: 0
+  description: Reset Button Text
+  targetObject: {fileID: 2131889719}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &636191057
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4133,7 +4181,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -4154,16 +4202,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 414.24243
-    y: 184.045
-    width: 171.4285
+    x: 415.671
+    y: 182.61642
+    width: 166.43831
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 108
   blockName: Delete Save Profile 1
   description: 
-  eventHandler: {fileID: 636191056}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 636191059}
   - {fileID: 636191063}
@@ -4299,13 +4347,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 250.24643
-    y: 186.87125
-    width: 157.14279
+    x: 251.61629
+    y: 188.2411
+    width: 152.73969
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 38
+  itemId: 122
   blockName: NewSave1 (Copy)
   description: 
   eventHandler: {fileID: 636191069}
@@ -4399,7 +4447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 636191065}
-  targetButton: {fileID: 1575242409}
+  targetButton: {fileID: 2079893821}
 --- !u!114 &636191070
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4502,11 +4550,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 250.02542
     y: 243.80817
-    width: 157.14279
+    width: 152.73969
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 66
+  itemId: 123
   blockName: NewSave2 (Copy)
   description: 
   eventHandler: {fileID: 636191070}
@@ -4514,6 +4562,60 @@ MonoBehaviour:
   - {fileID: 636191073}
   - {fileID: 636191072}
   - {fileID: 636191071}
+--- !u!114 &636191075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 125
+  indentLevel: 0
+  description: Reset Button Text
+  targetObject: {fileID: 1567630732}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &636191076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636190966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 124
+  indentLevel: 0
+  description: Reset Button Text
+  targetObject: {fileID: 1796893791}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &666489626
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5469,6 @@ GameObject:
   - component: {fileID: 955095749}
   - component: {fileID: 955095751}
   - component: {fileID: 955095750}
-  - component: {fileID: 955095752}
   m_Layer: 5
   m_Name: LG2
   m_TagString: Untagged
@@ -5433,19 +5534,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955095748}
   m_CullTransparentMesh: 0
---- !u!114 &955095752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 955095748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 955095750}
-  fileName: FungusSaves/SaveProfile2.json
 --- !u!1 &970789004
 GameObject:
   m_ObjectHideFlags: 1
@@ -6006,7 +6094,6 @@ GameObject:
   - component: {fileID: 1092041906}
   - component: {fileID: 1092041908}
   - component: {fileID: 1092041907}
-  - component: {fileID: 1092041909}
   m_Layer: 5
   m_Name: LG1
   m_TagString: Untagged
@@ -6072,19 +6159,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1092041905}
   m_CullTransparentMesh: 0
---- !u!114 &1092041909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1092041905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1092041907}
-  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &1094784787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,6 +7657,7 @@ GameObject:
   - component: {fileID: 1567630736}
   - component: {fileID: 1567630735}
   - component: {fileID: 1567630734}
+  - component: {fileID: 1567630737}
   m_Layer: 5
   m_Name: Save2LoadGame
   m_TagString: Untagged
@@ -7684,6 +7759,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567630732}
   m_CullTransparentMesh: 0
+--- !u!114 &1567630737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567630732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: FungusSaves/SaveProfile2.json
 --- !u!1 &1575242407
 GameObject:
   m_ObjectHideFlags: 0
@@ -8040,7 +8127,7 @@ RectTransform:
   m_Father: {fileID: 990990034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.31992394}
+  m_AnchorMin: {x: 0, y: 0.315495}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -8353,7 +8440,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030518, y: 0.000091552734}
-  m_SizeDelta: {x: -14.299988, y: 144.89066}
+  m_SizeDelta: {x: -14.299988, y: 141.96033}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1638194705
 MonoBehaviour:
@@ -8858,7 +8945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 902.00726, y: 0}
+  m_AnchoredPosition: {x: 848.7487, y: 0}
   m_SizeDelta: {x: 302, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1772690576
@@ -9138,6 +9225,7 @@ GameObject:
   - component: {fileID: 1796893795}
   - component: {fileID: 1796893794}
   - component: {fileID: 1796893793}
+  - component: {fileID: 1796893796}
   m_Layer: 5
   m_Name: Save1LoadGame
   m_TagString: Untagged
@@ -9239,6 +9327,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796893791}
   m_CullTransparentMesh: 0
+--- !u!114 &1796893796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796893791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &1822770809
 GameObject:
   m_ObjectHideFlags: 0
@@ -9405,8 +9505,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1612867044}
   m_HandleRect: {fileID: 1612867043}
   m_Direction: 2
-  m_Value: 0.99999934
-  m_Size: 0.6800759
+  m_Value: 0.9999996
+  m_Size: 0.6845048
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10038,6 +10138,7 @@ GameObject:
   - component: {fileID: 2131889723}
   - component: {fileID: 2131889722}
   - component: {fileID: 2131889721}
+  - component: {fileID: 2131889724}
   m_Layer: 5
   m_Name: Save1NewGame
   m_TagString: Untagged
@@ -10139,6 +10240,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2131889719}
   m_CullTransparentMesh: 0
+--- !u!114 &2131889724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131889719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8b106c8d9a6d45ba16d4386117920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: FungusSaves/SaveProfile1.json
 --- !u!1 &2145195375
 GameObject:
   m_ObjectHideFlags: 0
