@@ -30,13 +30,7 @@ namespace Fungus
 
         public override void OnEnter()
 		{
-			Debug.Log ("Prof_name: " + saveProfileName);
-			Debug.Log ("Prof: " + saveProfile);
-
 			saveProfile = saveProfileName;
-
-			Debug.Log ("Prof_name: " + saveProfileName);
-			Debug.Log ("Prof: " + saveProfile);
 
             Continue();
         }

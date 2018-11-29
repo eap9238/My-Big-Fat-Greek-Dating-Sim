@@ -16,68 +16,40 @@ public class TextLoad : MonoBehaviour
 
     void Start()
     {
-		text = GetComponentInChildren<Text> ();
-		button = GetComponent<Button> ();
+        text = GetComponentInChildren<Text>();
+        button = GetComponent<Button>();
+
+        dataPath = Path.Combine(Application.persistentDataPath, fileName);
+    }
+
+    public void LoadText()
+    {
+        text = GetComponentInChildren<Text>();
+        button = GetComponent<Button>();
 
         dataPath = Path.Combine(Application.persistentDataPath, fileName);
 
-        Debug.Log("Start Sequence completed for " + fileName + " at " + dataPath);
-    }
-
-    void Update()
-	{
-		
-    }
-
-	public void LoadText()
-    {
-        Debug.Log("Begin Loading for " + fileName + " at " + dataPath);
-
-        printData = LoadJson(dataPath, button);        
-
-        text.text = printData;
-
-        Debug.Log("Complete Loading for " + fileName + " at " + dataPath);
+        text.text = LoadJson(dataPath, button);
     }
 
     static string LoadJson(string path, Button btn)
     {
-        if (path == null)
+        btn.interactable = true;
+
+        try
         {
-            Debug.Log("Path still doesn't exist.");
-
-            //btn.interactable = false;
-
-            return ("No Save File");
-        }
-
-		try {
-			using (StreamReader streamReader = new StreamReader(path))
+            using (StreamReader streamReader = new StreamReader(path))
             {
-                Debug.Log("Begin Reading at " + path);
-
                 string jsonString = streamReader.ReadToEnd();
 
-				JsonObject formattedString = JsonUtility.FromJson<JsonObject>(jsonString);
-
-                //Debug.Log(jsonString);
-                //Debug.Log(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
-                //Debug.Log(formattedString.Length);
-
-                btn.interactable = true;
-
-                Debug.Log("End Reading at " + path);
+                JsonObject formattedString = JsonUtility.FromJson<JsonObject>(jsonString);
 
                 return JSONDescription(formattedString.SavePoints[(formattedString.SavePoints.Count) - 1]);
             }
-		}
-		catch
+        }
+        catch
         {
-            Debug.Log("Begin Error at " + path);
-
             btn.interactable = false;
-
-            Debug.Log("End Reading at " + path);
 
             return ("No Save File");
         }
@@ -87,15 +59,10 @@ public class TextLoad : MonoBehaviour
     {
         var savePointData = JsonUtility.FromJson<SavePointData>(saveDataJSON);
 
-        //Debug.Log(savePointData);
-
         SaveObject playerData = new SaveObject();
 
         playerData = JsonUtility.FromJson<SaveObject>(savePointData.SaveDataItems[0].Data);
 
-        //Debug.Log(savePointData.SaveDataItems[0].Data);
-        //Debug.Log(playerData.FlowchartName);
-        
         string temp = "";
 
         if (playerData.BoolVars[0].Value)
@@ -124,7 +91,7 @@ public class TextLoad : MonoBehaviour
 
         public int Version { get { return version; } set { version = value; } }
         public List<string> SavePoints { get { return savePoints; } set { savePoints = value; } }
-        
+
         #endregion
     }
 
@@ -163,7 +130,7 @@ public class TextLoad : MonoBehaviour
         /// Gets or sets the list of encoded boolean variables.
         /// </summary>
         public List<BoolVar> BoolVars { get { return boolVars; } set { boolVars = value; } }
-       
+
         #endregion
     }
 

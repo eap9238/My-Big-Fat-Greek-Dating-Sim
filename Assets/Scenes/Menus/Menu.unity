@@ -671,6 +671,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122320913}
   m_CullTransparentMesh: 0
+--- !u!1 &130228254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130228255}
+  - component: {fileID: 130228256}
+  m_Layer: 0
+  m_Name: Smile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130228255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130228254}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1979243843}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &130228256
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130228254}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 441f887190dcbc94c9a5fc7b44f2f37a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.25, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &177496262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,7 +2217,6 @@ GameObject:
   - component: {fileID: 636191006}
   - component: {fileID: 636191008}
   - component: {fileID: 636191007}
-  - component: {fileID: 636191014}
   - component: {fileID: 636191013}
   - component: {fileID: 636191012}
   - component: {fileID: 636191011}
@@ -2182,11 +2256,9 @@ GameObject:
   - component: {fileID: 636191060}
   - component: {fileID: 636191059}
   - component: {fileID: 636191058}
-  - component: {fileID: 636191057}
   - component: {fileID: 636191055}
   - component: {fileID: 636191054}
   - component: {fileID: 636191053}
-  - component: {fileID: 636191039}
   - component: {fileID: 636191038}
   - component: {fileID: 636191037}
   - component: {fileID: 636191036}
@@ -2209,6 +2281,8 @@ GameObject:
   - component: {fileID: 636191075}
   - component: {fileID: 636191056}
   - component: {fileID: 636191052}
+  - component: {fileID: 636191039}
+  - component: {fileID: 636191014}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2229,11 +2303,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 53.19449, y: 24.616907}
+  scrollPos: {x: 29.860224, y: -20.367813}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 367
-  zoom: 0.7300003
+  zoom: 0.6700004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2241,9 +2315,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 636190969}
+  - {fileID: 636191055}
   selectedCommands:
-  - {fileID: 636191052}
+  - {fileID: 636191054}
   variables:
   - {fileID: 636191045}
   - {fileID: 636191044}
@@ -2365,8 +2439,7 @@ MonoBehaviour:
   blockName: New Block
   description: 
   eventHandler: {fileID: 636190971}
-  commandList:
-  - {fileID: 636191014}
+  commandList: []
 --- !u!4 &636190973
 Transform:
   m_ObjectHideFlags: 0
@@ -2396,7 +2469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 82.43909
     y: 195.09764
-    width: 134.93147
+    width: 129.10443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2901,7 +2974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.658615
     y: 143.46342
-    width: 133.56161
+    width: 127.6119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2991,7 +3064,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 238.6702
     y: 32.48452
-    width: 141.78079
+    width: 133.58205
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3066,7 +3139,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 421.45642
     y: 30.67799
-    width: 174.65747
+    width: 161.94025
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3198,7 +3271,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 422.0086
     y: 89.58172
-    width: 174.65747
+    width: 161.94025
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3214,19 +3287,31 @@ MonoBehaviour:
   - {fileID: 636191011}
 --- !u!114 &636191014
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0000066e72e484959b6a314a95d0dcd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 46
+  itemId: 129
   indentLevel: 0
-  resetCommands: 1
-  resetVariables: 1
+  description: Reset Button Text
+  targetObject: {fileID: 1796893791}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &636191015
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3242,7 +3327,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 248.69647
     y: 311.60785
-    width: 156.84927
+    width: 145.52234
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3385,7 +3470,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 237.02068
     y: 92.27841
-    width: 141.78079
+    width: 133.58205
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3474,7 +3559,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 421.9165
     y: 310.71857
-    width: 156.84927
+    width: 145.52234
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3698,21 +3783,31 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &636191039
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 103
+  itemId: 128
   indentLevel: 0
-  logType: 0
-  logMessage:
-    stringRef: {fileID: 0}
-    stringVal: SaveProfile2 Deleted
+  description: Reset Button Text
+  targetObject: {fileID: 1567630732}
+  targetComponentAssemblyName: TextLoad, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TextLoad
+  targetMethod: LoadText
+  targetMethodText: 'LoadText (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &636191040
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4009,7 +4104,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &636191052
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
@@ -4067,7 +4162,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -4090,7 +4185,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 417.40405
     y: 245.95396
-    width: 166.43831
+    width: 154.47755
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4106,7 +4201,7 @@ MonoBehaviour:
   - {fileID: 636191062}
 --- !u!114 &636191056
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
@@ -4131,23 +4226,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &636191057
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 96
-  indentLevel: 0
-  logType: 0
-  logMessage:
-    stringRef: {fileID: 0}
-    stringVal: SaveProfile1 Deleted
 --- !u!114 &636191058
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4181,7 +4259,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a240aa44597844f89e6d1ba15a96b04, type: 3}
   m_Name: 
@@ -4204,7 +4282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 415.671
     y: 182.61642
-    width: 166.43831
+    width: 154.47755
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4216,7 +4294,7 @@ MonoBehaviour:
   - {fileID: 636191059}
   - {fileID: 636191063}
   - {fileID: 636191058}
-  - {fileID: 636191057}
+  - {fileID: 636191014}
   - {fileID: 636191061}
 --- !u!114 &636191061
 MonoBehaviour:
@@ -4349,7 +4427,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 251.61629
     y: 188.2411
-    width: 152.73969
+    width: 144.0298
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4549,8 +4627,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 250.02542
-    y: 243.80817
-    width: 152.73969
+    y: 245.3007
+    width: 144.0298
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4564,7 +4642,7 @@ MonoBehaviour:
   - {fileID: 636191071}
 --- !u!114 &636191075
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
@@ -4591,7 +4669,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &636191076
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636190966}
@@ -6112,7 +6190,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1796893792}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9243,6 +9321,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1979243843}
   - {fileID: 1092041906}
   m_Father: {fileID: 1362778079}
   m_RootOrder: 7
@@ -9752,6 +9831,81 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1979243842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979243843}
+  - component: {fileID: 1979243844}
+  m_Layer: 0
+  m_Name: New Sprite Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979243843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979243842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2000122, y: 69, z: -1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_Children:
+  - {fileID: 130228255}
+  m_Father: {fileID: 1796893792}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!331 &1979243844
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979243842}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 62955e2782fd34c5ca3e78712625ae50, type: 3}
+  m_MaskAlphaCutoff: 0.359
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2021878713
 GameObject:
   m_ObjectHideFlags: 0

@@ -334,9 +334,6 @@ namespace Fungus
             // Reset the Save History for a new game
             //saveManager.ClearHistory();
             saveManager.Delete(saveDataKey);
-
-            //SaveManagerSignals.DoSaveReset();
-            //SceneManager.LoadScene(saveManager.StartScene);
         }
 
         #endregion
