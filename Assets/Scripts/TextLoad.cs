@@ -11,6 +11,7 @@ public class TextLoad : MonoBehaviour
     protected Button button;
 
     public string fileName;
+    public bool allowLoad;
     protected string dataPath;
     protected string printData;
 
@@ -29,10 +30,10 @@ public class TextLoad : MonoBehaviour
 
         dataPath = Path.Combine(Application.persistentDataPath, fileName);
 
-        text.text = LoadJson(dataPath, button);
+        text.text = LoadJson(dataPath, button, allowLoad);
     }
 
-    static string LoadJson(string path, Button btn)
+    static string LoadJson(string path, Button btn, bool allowLoad)
     {
         btn.interactable = true;
 
@@ -49,7 +50,10 @@ public class TextLoad : MonoBehaviour
         }
         catch
         {
-            btn.interactable = false;
+            if (!allowLoad)
+            {
+                btn.interactable = false;
+            }
 
             return ("No Save File");
         }
